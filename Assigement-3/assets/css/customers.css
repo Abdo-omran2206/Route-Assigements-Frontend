@@ -1,0 +1,210 @@
+/* Rating & Reviews */
+.reviews {
+  padding: 50px 0;
+}
+.reviews .customers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+.reviews .rating-card {
+  position: sticky;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid #d1d5dc 2px;
+  gap: 5px;
+  border-radius: 15px;
+  padding: 32px;
+}
+.reviews .rating-card .rating-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reviews .rating-card .main-rate {
+  font-size: 60px;
+  font-weight: 700;
+}
+.reviews .rating-card p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.reviews .rating-card .rate-continer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviews .rating-card .rate-continer .rating-icon {
+  width: 30px;
+}
+.reviews .rating-card .rate-continer .rating-icon img {
+  width: 100%;
+}
+.reviews .rating-card .progress-continer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+.reviews .rating-card .progress-continer .progress-item {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.reviews .rating-card .progress-continer .progress-item span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.reviews .rating-card .progress-continer .progress-item .progress {
+  background-color: #e5e7eb;
+  width: 250px;
+  border-radius: 5px;
+  height: 10px;
+  position: relative;
+}
+.reviews .rating-card .progress-continer .progress-item .progress::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 15px;
+  background-color: #f0b100;
+}
+.reviews .rating-card .progress-continer .progress-item .progress1::before {
+  width: 78%;
+}
+.reviews .rating-card .progress-continer .progress-item .progress2::before {
+  width: 15%;
+}
+.reviews .rating-card .progress-continer .progress-item .progress3::before {
+  width: 5%;
+}
+.reviews .rating-card .progress-continer .progress-item .progress4::before {
+  width: 1.5%;
+}
+.reviews .rating-card .progress-continer .progress-item .progress5::before {
+  width: 0.5%;
+}
+.reviews .rating-card .rating-summary {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.reviews .rating-card .rating-summary div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.reviews .rating-card .rating-summary div .head {
+  font-size: 24px;
+  font-weight: 700;
+}
+.reviews .rating-card .rating-summary div span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.reviews .reviews-section .review-card {
+  border: solid #d1d5dc 2px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  padding: 40px 40px 50px 40px;
+}
+.reviews .reviews-section .review-card .review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.reviews .reviews-section .review-card .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.reviews .reviews-section .review-card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.reviews .reviews-section .review-card .profile-image {
+  width: 60px;
+}
+.reviews .reviews-section .review-card .profile-image img {
+  border-radius: 50px;
+  border: #7f22fe solid 2px;
+  width: 100%;
+}
+.reviews .reviews-section .review-card .profile .rating-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.reviews .reviews-section .review-card .profile .rating-section img {
+  width: 18px;
+}
+.reviews .reviews-section .review-card .profile .rating-section span {
+  margin-left: 10px;
+}
+.reviews .reviews-section .review-card .profile-data h4,
+.reviews .reviews-section .review-card .profile-data p {
+  margin: 0;
+}
+.reviews .reviews-section .review-card .profile-data p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.reviews .reviews-section .review-card .profile-data h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.reviews .reviews-section .review-card .verified-continer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+.reviews .reviews-section .review-card .verified-continer .verified-check {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5d0ec0;
+  background-color: #ede9fe;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.reviews .reviews-section .review-card .verified-continer .verified-date {
+  font-size: 14px;
+  font-weight: 400;
+}
+.reviews .reviews-section .loadmore-btn {
+  width: 100%;
+  text-align: center;
+}
+.reviews .reviews-section .loadmore-btn button {
+  background-color: #8e51ff;
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: all 0.2s;
+  border: #8F55FD solid 2px;
+}
+.reviews .reviews-section .loadmore-btn button:hover {
+  background-color: transparent;
+  color: #8F55FD;
+}
