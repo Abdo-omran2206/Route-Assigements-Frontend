@@ -1,0 +1,134 @@
+/* Hero section */
+.hero {
+  padding: 50px 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .continer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.hero .hero-image {
+  position: relative;
+  width: 40%;
+  border: #e4e6ea solid 2px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.hero .hero-image span {
+  background-color: #8e51ff;
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 15px;
+}
+.hero .hero-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero .hero-content .properties-spans {
+  gap: 25px;
+  display: flex;
+}
+.hero .hero-content .properties-spans span {
+  background-color: #a684ff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+.hero .hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero .hero-content h1 span {
+  color: #8e51ff;
+}
+.hero .hero-content p {
+  font-size: 20px;
+  line-height: 33px;
+  font-weight: 400;
+}
+.hero .hero-content .price {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.hero .hero-content .price span {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.hero .hero-content .price .offer-price {
+  color: #333333;
+  font-size: 35px;
+}
+.hero .hero-content .price .real-price {
+  color: #3f3f3f;
+  font-weight: 200;
+  font-size: 25px;
+  text-decoration: line-through;
+}
+.hero .hero-content .price .discount {
+  color: #e80c0d;
+  background: #ffe2e2;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.hero .hero-content .offer-option {
+  font-size: 17px;
+  color: #333333;
+}
+.hero .hero-content .hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.hero .hero-content .hero-buttons a {
+  text-decoration: none;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.5s;
+}
+.hero .hero-content .hero-buttons a:hover{
+    transform: scale(1.03);
+}
+.hero .hero-content .hero-buttons .cart-btn {
+  background-color: #8e51ff;
+  color: #fff;
+}
+.hero .hero-content .hero-buttons .wishlist-btn {
+  background-color: #fff;
+  color: #000000;
+  border: solid #D1D5DC 2px;
+}
+.hero .hero-content .hero-buttons .hero-btn-icon {
+  width: 25px;
+}

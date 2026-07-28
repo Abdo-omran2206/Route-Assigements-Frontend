@@ -1,0 +1,105 @@
+/* products section */
+.products {
+  background-color: #f7f5ff;
+  padding: 50px 0;
+}
+.products .prodects-continer {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .prodects-continer .product-card {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 25px;
+  border: solid #e5e7eb 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.products .prodects-continer .product-card .product-image {
+  width: 100%;
+  position: relative;
+}
+.products .prodects-continer .product-card .product-image img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+.products .prodects-continer .product-card:hover img{
+    transform: scale(1.05);
+}
+.products .prodects-continer .product-card .product-image span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.products .prodects-continer .product-card .product-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.products .prodects-continer .product-card .product-content p {
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 24px;
+}
+.products .prodects-continer .product-card .product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.products .prodects-continer .product-card .product-price span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.products .prodects-continer .product-card .product-price button {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #8e51ff;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.products .more-products {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+}
+.products .more-products button {
+  background-color: transparent;
+  border: solid 2px #700ce7;
+  border-radius: 30px;
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #700ce7;
+  transition: 0.2s;
+}
+.products .more-products button:hover {
+  background-color: #700ce7;
+  color: #fff;
+  transition: 0.2s;
+}
+.products .prodects-continer .product-card .product-image .accessory {
+  background-color: #00bba7;
+}
+.products .prodects-continer .product-card .product-image .essential {
+  background-color: #00c950;
+}
+.products .prodects-continer .product-card .product-image .power {
+  background-color: #00b8db;
+}
+.products .prodects-continer .product-card .product-image .safety {
+  background-color: #ff6900;
+}

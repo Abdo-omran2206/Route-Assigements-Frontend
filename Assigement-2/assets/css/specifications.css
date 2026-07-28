@@ -1,0 +1,159 @@
+.specifications table img {
+  width: 20px;
+}
+.specifications table thead tr {
+  border-bottom: solid #dadee3 2px;
+}
+.specifications table tr {
+  border-bottom: solid #dadee3 1px;
+}
+.specifications table tfoot tr {
+  border-bottom: 0;
+}
+.specifications table .competitor-red {
+  color: #f54900;
+}
+.specifications table .competitor-red div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Specifications section */
+.specifications {
+  background-color: #f7f5ff;
+  padding: 50px 0;
+}
+.specifications .specifications-table {
+  background-color: #fff;
+  border: solid #d1d5dc 2px;
+  padding: 50px;
+  border-radius: 20px;
+}
+.specifications table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.specifications table thead div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.specifications table thead .header-title {
+  font-size: 18px;
+  color: #333;
+}
+.specifications table thead .header-sub-title {
+  font-size: 14px;
+  color: #6a7282;
+}
+.specifications table thead .our-product-header .header-title {
+  color: #8e51ff;
+  font-weight: 700;
+}
+.specifications table thead .our-product-header .header-sub-title {
+  font-weight: 500;
+  color: #8e51ff;
+}
+.specifications table .fetcher-name {
+  text-align: left;
+}
+.specifications table .fetcher-name div {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.specifications table thead th {
+  padding: 24px 0;
+}
+.specifications table td {
+  padding: 16px 0;
+}
+.specifications table .our-product {
+  background-color: #ede9fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.specifications table .our-product .our-product-body {
+  background-color: #8e51ff;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.specifications table .our-product-header {
+  border-radius: 15px 15px 0 0;
+}
+.specifications table .our-product-footer {
+  border-radius: 0 0 15px 15px;
+}
+.specifications table .our-product .our-product-price {
+  color: #7008e7;
+  font-size: 24px;
+  font-weight: 700;
+}
+.specifications table .competitor-price {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+}
+.specifications table tfoot .our-product-footer {
+  display: flex;
+  flex-direction: column;
+}
+.specifications table tfoot .rate-continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+.specifications table tfoot span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.specifications table tfoot .our-product-footer span,
+.specifications table tfoot .fetcher-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.specifications .winner-card {
+  background-color: #fff;
+  border: 1px solid #dadae0;
+  width: 25%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.specifications .winner-card .winner-icon {
+  width: 30px;
+}
+.specifications .winner-card .winner-icon img {
+  width: 100%;
+}
+.specifications .winner-card .winner-content p {
+  font-size: 18px;
+  color: #00a63e;
+  text-align: left;
+  margin: 0;
+}
+.specifications .winner-card .winner-content .winner-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.specifications .winner-card .winner-content .winner-sub-title {
+  font-size: 14px;
+  font-weight: 400;
+}
