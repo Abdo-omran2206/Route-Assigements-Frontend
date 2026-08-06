@@ -1,0 +1,197 @@
+.authors {
+  background-color: #ffd230;
+  padding: 50px 0;
+  border-bottom: 3px solid #000;
+  position: relative;
+}
+.authors .container{
+  position: relative;
+  z-index: 5;
+}
+.authors .authors-title {
+  z-index: 5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.authors .authors-title h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.authors .authors-title p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #525252;
+  margin: 0;
+}
+.authors .authors-title .underline {
+  margin-top: 10px;
+  width: 128px;
+  rotate: 1deg;
+  height: 8px;
+  background-color: black;
+}
+.authors .authors-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.authors .authors-group .author-card {
+  width: calc((100% - (2 * 30px)) / 3);
+  min-height: 500px;
+  border: #000 solid 4px;
+  box-shadow: 5px 5px 0px #000;
+  padding: 32px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.5s;
+}
+.authors .authors-group .author-card:hover {
+  transform: translate(-5px, -5px);
+}
+.authors .authors-group .author-card span {
+  border: 2px solid #000;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.authors .authors-group .author-card-1 {
+  background-color: #fef9c2;
+}
+.authors .authors-group .author-card-1:hover h3 {
+  color: #e7000b;
+}
+.authors .authors-group .author-card-2 {
+  background-color: #dbfce7;
+}
+.authors .authors-group .author-card-2:hover h3 {
+  color: #155dfc;
+}
+.authors .authors-group .author-card-3 {
+  background-color: #fce7f3;
+}
+.authors .authors-group .author-card-3:hover h3 {
+  color: #9858f8;
+}
+
+.authors .authors-group .author-card .founder {
+  background-color: #fb2c36;
+  rotate: 12deg;
+}
+.authors .authors-group .author-card .lead {
+  background-color: #2b7fff;
+  rotate: -12deg;
+}
+.authors .authors-group .author-card .viral {
+  background-color: #ad46ff;
+  rotate: 45deg;
+}
+
+.authors .authors-group .author-card .author-image {
+  width: 125px;
+  border: solid 4px #000;
+}
+.authors .authors-group .author-card .author-metadata h3 {
+  font-size: 1.875rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+.authors .authors-group .author-card .author-metadata p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #525252;
+  margin: 0;
+}
+.authors .authors-group .author-card .author-content {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+.authors .authors-group .author-card ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin-bottom: 0;
+}
+.authors .authors-group .author-card ul li {
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid #000;
+}
+.authors .authors-group .author-card ul li a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.authors .authors-group .author-card ul li:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0px #000;
+}
+.authors .authors-group .author-card ul .twitter:hover {
+  background-color: #1da1f2;
+}
+.authors .authors-group .author-card ul .linkedin:hover {
+  background-color: #155dfc;
+}
+.authors .authors-group .author-card ul .instagram:hover {
+  background-color: #e60076;
+}
+
+@media screen and (max-width: 1024px) {
+  .authors .authors-title h2 {
+    font-size: 2.625rem;
+  }
+  .authors .authors-title p {
+    font-size: 1.125rem;
+  }
+  .authors .authors-group .author-card {
+    width: 100%;
+    padding: 25px;
+  }
+  .authors .authors-group .author-card .author-metadata h3 {
+    font-size: 1.625rem;
+  }
+  .authors .authors-group .author-card .author-metadata p,
+  .authors .authors-group .author-card .author-content {
+    font-size: 0.875rem;
+  }
+}
+.authors .cube-1 {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  height: 160px;
+  width: 160px;
+  rotate: 45deg;
+  background-color: #e5bd2b;
+}
+.authors .cube-2 {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  height: 128px;
+  width: 128px;
+  rotate: -12deg;
+  background-color: #ffc131;
+}

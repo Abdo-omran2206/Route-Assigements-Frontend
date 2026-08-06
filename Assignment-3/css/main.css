@@ -1,0 +1,33 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Exo", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.red {
+  color: #e7000b;
+}
+.blue {
+  color: #155dfc;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 92%;
+  }
+}
