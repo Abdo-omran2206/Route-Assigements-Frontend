@@ -1,0 +1,60 @@
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 50px 0 30px 0;
+  gap: 20px;
+}
+
+.summary-cards > div {
+  background-color: var(--bg-card);
+  padding: 32px;
+  box-shadow: var(--box-shadow-sm);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-light);
+}
+
+.summary-cards div p {
+  margin: 0;
+}
+
+.summary-cards div .frist-text {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.summary-cards div .money {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: var(--text-main);
+}
+
+.summary-cards div div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--success);
+}
+
+.summary-cards div .negative {
+  color: var(--danger);
+}
+
+@media screen and (max-width: 1024px) {
+  .summary-cards div p {
+    margin-bottom: 5px;
+  }
+  .summary-cards div .money {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .summary-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .summary-cards div .money {
+    font-size: 1.875rem;
+  }
+}

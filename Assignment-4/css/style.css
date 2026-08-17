@@ -1,0 +1,187 @@
+:root {
+  /* Colors */
+  --primary: #155dfc;
+  --primary-hover: #1d4ed8;
+  --secondary: #432dd7;
+  --success: #00a63e;
+  --success-hover: #40c79a;
+  --danger: #e7000b;
+  --danger-hover: #f26969;
+  --warning: #d08700;
+  --info: #155dfc;
+  --purple: #9810fa;
+  --orange: #f54900;
+  --pink: #e60076;
+  --teal: #0092b8;
+  --green: #009966;
+  --indigo: #4f39f6;
+
+  /* Status Colors */
+  --status-complete-color: #016630;
+  --status-complete-bg: #dbfce7;
+  --status-pending-color: #894b00;
+  --status-pending-bg: #fef9c2;
+  --danger-bg: #ffe2e2;
+  --info-bg: #eff6ff;
+  --purple-bg: #f3e8ff;
+  --orange-bg: #ffedd4;
+  --pink-bg: #fce7f3;
+  
+  /* Neutral Colors */
+  --bg-body: #f9fafb;
+  --bg-card: #ffffff;
+  --bg-muted: #f9fafb;
+  --border-light: #e5e7eb;
+  --border-card: #ebe6e7;
+  
+  /* Text Colors */
+  --text-main: #101828;
+  --text-muted: #4a5565;
+  --text-light: #6a7282;
+  --text-dark: #364153;
+
+  /* Fonts & Sizing */
+  --font-family: "IBM Plex Sans Arabic", sans-serif;
+  --border-radius-lg: 15px;
+  --border-radius-md: 10px;
+  --border-radius-sm: 8px;
+  
+  /* Shadows */
+  --box-shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --box-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --logo-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-body);
+  direction: rtl;
+  font-family: var(--font-family);
+  display: flex;
+}
+
+button {
+  font-family: var(--font-family);
+}
+
+main {
+  width: 85%;
+  padding: 32px;
+}
+
+.dashboard-widgets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "new-activaty last-treads last-treads"
+    "monthly-bills last-treads last-treads"
+    "overview Income paygetway"
+    "overview account-summary paygetway ";
+  gap: 20px;
+}
+
+.dashboard-widgets > div {
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius-lg);
+  padding: 24px;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.dashboard-widgets .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.dashboard-widgets .title h3,
+.dashboard-widgets .title span {
+  margin: 0;
+  color: var(--text-main);
+}
+
+.dashboard-widgets .title h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.dashboard-widgets .title span {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: 0.1s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-widgets .title span:hover {
+  color: var(--text-main);
+}
+
+.dashboard-widgets .title span i {
+  font-size: 0.75rem;
+}
+
+.complete {
+  background-color: var(--status-complete-bg);
+  color: var(--status-complete-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: var(--border-radius-lg);
+}
+
+.pending {
+  background-color: var(--status-pending-bg);
+  color: var(--status-pending-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: var(--border-radius-lg);
+}
+
+.pay-income {
+  color: var(--success);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard-widgets {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "new-activaty Income "
+      "last-treads last-treads"
+      "monthly-bills account-summary "
+      "overview paygetway";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    padding: 16px;
+  }
+  .dashboard-widgets {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "new-activaty"
+      "last-treads"
+      "monthly-bills"
+      "overview"
+      "Income"
+      "account-summary"
+      "paygetway";
+  }
+}

@@ -1,0 +1,230 @@
+.overview {
+  grid-area: overview;
+}
+.overview .cards-section .card-main {
+  padding: 16px;
+  border-radius: var(--border-radius-lg);
+  background: linear-gradient(to right, var(--info-bg), #eef2ff);
+  border: 1px solid #dbeafe;
+  margin-bottom: 25px;
+}
+
+.overview .cards-section .card-main .card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview p {
+  margin: 0;
+}
+
+.overview .cards-section .card-main .card-head .card-right p:first-child {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.overview .cards-section .card-main .card-head .card-right p:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.overview .cards-section .card-main .card-head .card-left p:first-child {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.overview .cards-section .card-main .card-head .card-left p:last-child {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--success);
+}
+
+.overview .cards-section .card-main .card-foot {
+  margin-top: 12px;
+}
+
+.overview .cards-section .card-main .card-foot .card-foot-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.overview .cards-section .card-main .card-foot .card-foot-text span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.overview .cards-section .card-main .card-foot .prosses-bar,
+.overview .cards-section .card .prosses-bar {
+  background-color: var(--border-light);
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.overview .cards-section .card-main .card-foot .prosses-bar::after {
+  content: "";
+  position: absolute;
+  width: 82.5%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to right, #2b7fff, #615fff);
+  border-radius: 10px;
+}
+
+.overview .cards-section .card {
+  padding: 16px;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--bg-muted);
+  border: 1px solid #e5e7ebcc;
+  margin: 15px 0;
+  transition: all 0.2s;
+}
+
+.overview .cards-section .card:hover {
+  background-color: #f3f4f6cc;
+  transform: translateY(-1px);
+  border-color: #d1d5dbe6;
+  box-shadow:
+    0 4px 6px -1px #0000001a,
+    0 2px 4px -1px #0000000f;
+}
+
+.overview .cards-section .card .card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.overview .cards-section .card .card-head .card-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.overview .cards-section .card .card-head .card-right p:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.overview .cards-section .card .card-head .card-right p:last-child {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.overview .cards-section .card .card-head .card-left p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.overview .cards-section .card .card-head .card-left span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: var(--border-radius-lg);
+}
+
+.overview .cards-section .card .card-head .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.overview .cards-section .card .prosses-bar::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.overview .cards-section .card-1 .card-head .icon {
+  background-color: var(--orange-bg);
+  color: var(--orange);
+}
+
+.overview .cards-section .card-2 .card-head .icon {
+  background-color: #fee2e2;
+  color: var(--danger);
+}
+
+.overview .cards-section .card-3 .card-head .icon {
+  background-color: #fce7f3;
+  color: var(--pink);
+}
+
+.overview .cards-section .card-4 .card-head .icon {
+  background-color: var(--status-complete-bg);
+  color: var(--success);
+}
+
+.overview .cards-section .card-1 .card-head .card-left span,
+.overview .cards-section .card-4 .card-head .card-left span {
+  color: var(--status-complete-color);
+  background-color: var(--status-complete-bg);
+}
+
+.overview .cards-section .card-2 .card-head .card-left span {
+  color: #991b1b;
+  background-color: #fee2e2;
+}
+
+.overview .cards-section .card-3 .card-head .card-left span {
+  color: #92400e;
+  background-color: #fef3c7;
+}
+
+.overview .cards-section .card-1 .prosses-bar::after {
+  width: 50%;
+  background-color: #ff6900;
+}
+
+.overview .cards-section .card-2 .prosses-bar::after {
+  width: 100%;
+  background-color: #fb2c36;
+}
+
+.overview .cards-section .card-3 .prosses-bar::after {
+  width: 80%;
+  background-color: #f6339a;
+}
+
+.overview .cards-section .card-4 .prosses-bar::after {
+  width: 86%;
+  background-color: #00c950;
+}
+
+@media screen and (max-width: 1024px) {
+  .overview .cards-section .card .card-head {
+    flex-direction: column;
+  }
+  .overview .cards-section .card .card-head .card-right {
+    align-self: flex-start;
+  }
+  .overview .cards-section .card .card-head .card-left {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overview .cards-section .card .card-head {
+    flex-direction: row;
+  }
+}

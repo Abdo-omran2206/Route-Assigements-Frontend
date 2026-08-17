@@ -1,0 +1,79 @@
+/* account-summary */
+.account-summary {
+  grid-area: account-summary;
+}
+
+.account-summary .account-summary-items p {
+  margin: 0;
+}
+
+.account-summary .account-summary-items .item {
+  padding: 16px;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--bg-muted);
+  border: 1px solid #f6f3f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.account-summary .account-summary-items .item .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.account-summary .account-summary-items .item .right .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-summary .account-summary-items .item .right .text p:first-child,
+.account-summary .account-summary-items .item .left {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.account-summary .account-summary-items .item .right .text p:last-child {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.account-summary .account-summary-items .item-1 .icon {
+  background-color: var(--info-bg);
+  color: var(--primary);
+}
+
+.account-summary .account-summary-items .item-2 .icon {
+  background-color: var(--status-complete-bg);
+  color: var(--success);
+}
+
+.account-summary .account-summary-items .item-3 .icon {
+  background-color: var(--purple-bg);
+  color: var(--purple);
+}
+
+.account-summary .account-summary-items .item-3 .left p {
+  color: var(--danger);
+}
+
+@media screen and (max-width: 1024px) {
+  .account-summary .account-summary-items .item {
+    flex-direction: column;
+  }
+  .account-summary .account-summary-items .item .right {
+    align-self: flex-start;
+  }
+  .account-summary .account-summary-items .item .left {
+    align-self: flex-end;
+  }
+}

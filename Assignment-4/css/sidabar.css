@@ -1,0 +1,233 @@
+aside {
+  background-color: var(--bg-card);
+  width: 15%;
+  padding: 15px 20px 0 20px;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+aside .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+aside .logo-section .logo {
+  background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  color: var(--bg-card);
+  box-shadow: var(--logo-shadow);
+  border-radius: var(--border-radius-lg);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+aside .logo-section .logo-text h1,
+aside .logo-section .logo-text p {
+  margin: 0;
+}
+
+aside .logo-section .logo-text h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+aside .logo-section .logo-text p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+aside nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+aside nav ul li {
+  margin: 3px 0;
+  padding: 13px;
+  border-radius: var(--border-radius-lg);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+aside nav ul li.active {
+  background-color: var(--info-bg);
+  border: 1px solid #dbeafe;
+}
+
+aside nav ul li.active span {
+  color: var(--primary);
+}
+
+aside nav ul li.active:hover {
+  color: var(--primary);
+  background-color: var(--info-bg);
+}
+
+aside nav ul li:hover {
+  background-color: var(--bg-body);
+}
+
+aside nav ul li span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+aside nav ul li span i {
+  margin-left: 8px;
+}
+
+aside h3 {
+  color: var(--text-dark);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+aside .quick-action {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+aside .quick-action button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-main);
+  text-align: right;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+  border-radius: var(--border-radius-lg);
+  background-color: transparent;
+  border: 0;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+aside .quick-action button span {
+  color: #374151;
+}
+
+aside .quick-action button:hover {
+  background-color: var(--bg-body);
+  transform: translate(3px);
+}
+
+aside .quick-action button:hover span {
+  color: var(--text-main);
+}
+
+aside .quick-action button div {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--bg-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+}
+
+aside .quick-action button .quick-action-1 {
+  background-color: #dbe8fc;
+}
+
+aside .quick-action button .quick-action-1 i {
+  color: var(--primary);
+}
+
+aside .quick-action button .quick-action-2 {
+  background-color: #d4f3e1;
+}
+
+aside .quick-action button .quick-action-2 i {
+  color: var(--success);
+}
+
+aside .quick-action button .quick-action-3 {
+  background-color: var(--purple-bg);
+}
+
+aside .quick-action button .quick-action-3 i {
+  color: var(--purple);
+}
+
+aside .quick-action button .quick-action-4 {
+  background-color: var(--orange-bg);
+}
+
+aside .quick-action button .quick-action-4 i {
+  color: var(--orange);
+}
+
+@media screen and (max-width: 1024px) {
+  aside {
+    width: 45px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  aside .logo-section {
+    gap: 0;
+  }
+  aside .logo-section .logo {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  aside h3,
+  aside h1,
+  aside p,
+  aside span span,
+  aside .quick-action span {
+    display: none;
+  }
+  aside nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  aside nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+  aside nav ul li span i {
+    margin: 0;
+    font-size: 1rem;
+  }
+  aside .quick-action {
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 15px;
+  }
+  aside .quick-action button {
+    padding: 10px 0;
+  }
+  aside .quick-action button:hover {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+}

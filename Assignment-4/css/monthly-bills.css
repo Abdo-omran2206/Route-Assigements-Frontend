@@ -1,0 +1,94 @@
+.monthly-bills {
+  grid-area: monthly-bills;
+}
+
+.monthly-bills .text p {
+  text-align: center;
+  margin: 0;
+}
+
+.monthly-bills .text p:first-child {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.monthly-bills .text p:last-child {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.monthly-bills .content {
+  display: grid;
+  margin-top: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.monthly-bills .content .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-muted);
+  padding: 12px;
+  border-radius: var(--border-radius-lg);
+}
+
+.monthly-bills .content .item p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.monthly-bills .content .item .head,
+.monthly-bills .content .item .foot {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.monthly-bills .content .item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.monthly-bills .content .item-1 span {
+  background-color: var(--info-bg);
+  color: var(--primary);
+}
+
+.monthly-bills .content .item-2 span {
+  background-color: var(--status-pending-bg);
+  color: var(--warning);
+}
+
+.monthly-bills .content .item-3 span {
+  background-color: var(--status-complete-bg);
+  color: #25b45a;
+}
+
+.monthly-bills .content .item-4 span {
+  background-color: #ffe2e2;
+  color: var(--danger);
+}
+
+.monthly-bills .content .item-1 .foot {
+  color: #fb2c36;
+}
+
+.monthly-bills .content .item-2 .foot {
+  color: #f97200;
+}
+
+.monthly-bills .content .item-3 .foot {
+  color: #00c950;
+}

@@ -1,0 +1,111 @@
+.dashboard-widgets .new-activaty {
+  grid-area: new-activaty;
+}
+
+.dashboard-widgets .new-activaty .cards {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-widgets .new-activaty .card-item {
+  display: flex;
+  gap: 15px;
+  padding: 12px;
+  border-radius: var(--border-radius-md);
+}
+
+.dashboard-widgets .new-activaty .card-item .icon {
+  width: 40px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-widgets .new-activaty .card-item .content-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-widgets .new-activaty .card-item .content {
+  width: 100%;
+}
+
+.dashboard-widgets .new-activaty .card-item .content-head h4,
+.dashboard-widgets .new-activaty .card-item .content-head span,
+.dashboard-widgets .new-activaty .card-item .content p {
+  margin: 0;
+}
+
+.dashboard-widgets .new-activaty .card-item .content-head h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.dashboard-widgets .new-activaty .card-item .content-head span {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.dashboard-widgets .new-activaty .card-item .content p,
+.dashboard-widgets .new-activaty .card-item .content span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.dashboard-widgets .new-activaty .card-item-1 {
+  background-color: var(--info-bg);
+  border-left: 4px solid var(--primary);
+}
+
+.dashboard-widgets .new-activaty .card-item-1 .icon {
+  background-color: #dbeafe;
+  color: var(--primary);
+}
+
+.dashboard-widgets .new-activaty .card-item-1 .content-head span {
+  color: var(--primary);
+}
+
+.dashboard-widgets .new-activaty .card-item-2 {
+  background-color: #f0fdf4;
+  border-left: 4px solid var(--success);
+}
+
+.dashboard-widgets .new-activaty .card-item-2 .icon {
+  background-color: var(--status-complete-bg);
+  color: var(--success);
+}
+
+.dashboard-widgets .new-activaty .card-item-2 .content-head span {
+  color: var(--success);
+}
+
+.dashboard-widgets .new-activaty .view-all {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f6f3f4;
+}
+
+.dashboard-widgets .new-activaty .view-all button {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.dashboard-widgets .new-activaty .view-all button:hover {
+  color: var(--primary-hover);
+}
