@@ -1,0 +1,53 @@
+.sponsors{
+  width: 80%;
+}
+.sponsors::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 110%;
+  background: radial-gradient(
+    ellipse at center,
+    var(--main-color) 45%,
+    transparent 70%
+  );
+  opacity: 0.55;
+  z-index: 0;
+}
+.logo-box {
+  width: 90px;
+  height: 90px;
+  flex: 0 0 auto;
+  background: #0f172a;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Scroll Animation */
+.logos-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.logos-scroll.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
