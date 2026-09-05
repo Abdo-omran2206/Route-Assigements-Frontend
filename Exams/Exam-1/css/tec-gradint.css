@@ -1,0 +1,299 @@
+/* FronEnd */
+.react,
+.microsoft,
+.docker,
+.postgre {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.next,
+.pipline {
+  background: linear-gradient(135deg, #fbf9fa, #f6f3f4);
+}
+
+.vue {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+.angular,
+.aws {
+  background: linear-gradient(135deg, #fff7ed, #ffedd4);
+}
+
+.tailwind {
+  background: linear-gradient(135deg, #ecfeff, #cefafe);
+}
+
+.vite {
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+}
+
+.tec-card.react .icon,
+.tec-card.microsoft .icon,
+.tec-card.docker .icon,
+.tec-card.postgre .icon {
+  background: #2b7fff;
+}
+.tec-card.next .icon,
+.tec-card.pipline .icon {
+  background: #000000;
+}
+.tec-card.vue .icon {
+  background: #00c950;
+}
+.tec-card.angular .icon,
+.tec-card.aws .icon {
+  background: #ff6900;
+}
+.tec-card.tailwind .icon {
+  background: #00b8db;
+}
+.tec-card.vite .icon {
+  background: #ad46ff;
+}
+.tec-card.react .badge,
+.tec-card.microsoft .badge,
+.tec-card.docker .badge,
+.tec-card.postgre .badge {
+  background: #dbeafe;
+  color: #193cb8;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.next .badge,
+.tec-card.pipline .badge {
+  background: #f3f4f6;
+  color: #1e2939;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.vue .badge {
+  background: #dbfce7;
+  color: #016630;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.angular .badge,
+.tec-card.aws .badge {
+  background: #ffedd4;
+  color: #9f2d00;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.tailwind .badge {
+  background: #cefafe;
+  color: #005f78;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.vite .badge {
+  background: #f3e8ff;
+  color: #6e11b0;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* Backend */
+
+.node,
+.mongo {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+.python {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.golang,
+.google {
+  background: linear-gradient(135deg, #fef2f2, #ffe2e2);
+}
+
+.java {
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+}
+
+.net {
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+}
+
+.ruby {
+  background: linear-gradient(135deg, #f0fdfa, #cbfbf1);
+}
+
+.tec-card.node .icon,
+.tec-card.mongo .icon {
+  background: #00a63e;
+}
+.tec-card.python .icon {
+  background: #155dfc;
+}
+.tec-card.golang .icon,
+.tec-card.google .icon {
+  background: #e7000b;
+}
+.tec-card.java .icon {
+  background: #9810fa;
+}
+.tec-card.net .icon {
+  background: #4f39f6;
+}
+.tec-card.ruby .icon {
+  background: #009689;
+}
+.tec-card.node .badge,
+.tec-card.mongo .badge {
+  background: #dbfce7;
+  color: #016630;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.python .badge {
+  background: #dbeafe;
+  color: #193cb8;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.golang .badge,
+.tec-card.google .badge {
+  background: #ffe2e2;
+  color: #9f0712;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.java .badge {
+  background: #f3e8ff;
+  color: #6e11b0;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.net .badge {
+  background: #e0e7ff;
+  color: #372aac;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.ruby .badge {
+  background: #cbfbf1;
+  color: #005f5a;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* Mobile */
+
+.flutter {
+  background: linear-gradient(135deg, #ecfeff, #cefafe);
+}
+
+.ios {
+  background: linear-gradient(135deg, #fbf9fa, #f6f3f4);
+}
+
+.android {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+}
+
+.xamarin,
+.kubernetes,
+.elastic {
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+}
+
+.pwa {
+  background: linear-gradient(135deg, #fff7ed, #ffedd4);
+}
+
+.tec-card.flutter .icon {
+  background: #00b8db;
+}
+.tec-card.ios .icon {
+  background: #364153;
+}
+.tec-card.android .icon {
+  background: #00a63e;
+}
+.tec-card.xamarin .icon,
+.tec-card.kubernetes .icon,
+.tec-card.elastic .icon {
+  background: #9810fa;
+}
+.tec-card.pwa .icon {
+  background: #f54900;
+}
+
+.tec-card.flutter .badge {
+  background: #cefafe;
+  color: #005f78;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.ios .badge {
+  background: #f3f4f6;
+  color: #1e2939;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.android .badge {
+  background: #dbfce7;
+  color: #016630;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.xamarin .badge,
+.tec-card.kubernetes .badge,
+.tec-card.elastic .badge {
+  background: #f3e8ff;
+  color: #6e11b0;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.pwa .badge {
+  background: #ffedd4;
+  color: #9f2d00;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* ----------------- */
+.radis {
+  background: linear-gradient(135deg, #fef2f2, #ffe2e2);
+}
+
+.mysql {
+  background: linear-gradient(135deg, #fefce8, #fef9c2);
+}
+
+.graph {
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+}
+
+.tec-card.radis .icon {
+  background: #c10007;
+}
+.tec-card.mysql .icon {
+  background: #d08700;
+}
+
+.tec-card.graph .icon {
+  background: #4f39f6;
+}
+
+.tec-card.radis .badge {
+  background: #ffe2e2;
+  color: #9f0712;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.mysql .badge {
+  background: #fef9c2;
+  color: #894b00;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.tec-card.graph .badge {
+  background: #e0e7ff;
+  color: #372aac;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
