@@ -29,6 +29,9 @@
     max-height: 100%;
   }
 
+  .rate-badge {
+    padding: 12px 16px !important;
+  }
   .overflow-lg-hidden {
     overflow: hidden !important;
   }
@@ -37,12 +40,12 @@
   .p-md-4-5 {
     padding: 2.5rem !important;
   }
-  .random-btn{
-      padding: 12px 24px;
+  .random-btn {
+    padding: 12px 24px;
   }
 }
 .p-3-5 {
-  padding: 1.25rem ;
+  padding: 1.25rem;
 }
 /* ================= BASE ================= */
 .fs--1 {
