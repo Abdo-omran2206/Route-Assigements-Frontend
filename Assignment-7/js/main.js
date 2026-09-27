@@ -78,7 +78,7 @@ function setUpdate(idx) {
 }
 
 function updateContact() {
-  if (validateِAddContactValues() === 0) return;
+  if (validateِAddContactValues("update") === 0) return;
   let contact = {
     name: name.value.trim(),
     number: number.value,

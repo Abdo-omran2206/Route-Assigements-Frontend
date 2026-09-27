@@ -28,7 +28,7 @@ function validator(type, value) {
 }
 
 // ================= Form Submission Validator ================= //
-function validateِAddContactValues() {
+function validateِAddContactValues(method = "") {
   if (!regex.name.test(name.value)) {
     alertMessages("Missing Name", "Please enter a valid name for the contact!");
     return 0;
@@ -44,16 +44,18 @@ function validateِAddContactValues() {
     );
     return 0;
   }
-  const existingContact = contactsList.find(
-    (data) => data.number == number.value,
-  );
-
-  if (existingContact) {
-    alertMessages(
-      "Duplicate Phone Number",
-      `A contact with this phone number already exists: ${existingContact.name}`,
+  if (method == "update") {
+    const existingContact = contactsList.find(
+      (data) => data.number == number.value,
     );
-    return 0;
+
+    if (existingContact) {
+      alertMessages(
+        "Duplicate Phone Number",
+        `A contact with this phone number already exists: ${existingContact.name}`,
+      );
+      return 0;
+    }
   }
 }
 
