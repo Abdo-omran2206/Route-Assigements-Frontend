@@ -49,6 +49,9 @@ function toggleModel(value) {
     model.classList.remove("d-none");
   } else {
     model.classList.add("d-none");
+    setInputsValus();
+    addContactBtn.classList.remove("d-none");
+    updateContactBtn.classList.add("d-none");
   }
 }
 

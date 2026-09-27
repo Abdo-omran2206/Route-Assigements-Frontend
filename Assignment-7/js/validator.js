@@ -44,7 +44,7 @@ function validateِAddContactValues(method = "") {
     );
     return 0;
   }
-  if (method == "update") {
+  if (method != "update") {
     const existingContact = contactsList.find(
       (data) => data.number == number.value,
     );
