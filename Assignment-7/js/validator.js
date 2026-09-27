@@ -44,6 +44,13 @@ function validateِAddContactValues(method = "") {
     );
     return 0;
   }
+  if (!regex.email.test(email.value)) {
+    alertMessages(
+      "Invalid Email",
+      "Please enter a valid email address",
+    );
+    return 0;
+  }
   if (method != "update") {
     const existingContact = contactsList.find(
       (data) => data.number == number.value,

@@ -16,6 +16,7 @@ const isEmergency = document.getElementById("isEmergency");
 const model = document.getElementById("model");
 const addContactBtn = document.getElementById("addContactBtn");
 const updateContactBtn = document.getElementById("updateContactBtn");
+const modelTitle = document.getElementById("model-title");
 
 // ================= Global Variables ================= //
 let contactsList = [];
@@ -52,6 +53,7 @@ function toggleModel(value) {
     setInputsValus();
     addContactBtn.classList.remove("d-none");
     updateContactBtn.classList.add("d-none");
+    modelTitle.innerText = "Add New Contact";
   }
 }
 
@@ -76,6 +78,7 @@ function setUpdate(idx) {
   setInputsValus(contactsList[idx]);
   toggleModel("open");
   editContactIndex = idx;
+  modelTitle.innerText = "Edit Contact";
   addContactBtn.classList.add("d-none");
   updateContactBtn.classList.remove("d-none");
 }
