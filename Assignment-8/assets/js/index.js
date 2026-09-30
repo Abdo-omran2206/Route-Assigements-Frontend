@@ -17,21 +17,17 @@ const resetSettingsBtn = document.getElementById("reset-settings");
 
 let currentCarouselIndex = 0;
 
-let pageData;
-
-if (localStorage.getItem("pageData")) {
-  pageData = JSON.parse(localStorage.getItem("pageData"));
-} else {
-  pageData = {
-    pageFontName: "font-tajawal",
-    pageTheme: "dark",
-    pageThemeColor: {
-      primary: "#6366f1",
-      secondary: "#8b5cf6",
-      accent: "#a855f7",
-    },
-  };
-}
+let pageData = localStorage.getItem("pageData")
+  ? JSON.parse(localStorage.getItem("pageData"))
+  : {
+      pageFontName: "font-tajawal",
+      pageTheme: "dark",
+      pageThemeColor: {
+        primary: "#6366f1",
+        secondary: "#8b5cf6",
+        accent: "#a855f7",
+      },
+    };
 
 function memory() {
   localStorage.setItem("pageData", JSON.stringify(pageData));
