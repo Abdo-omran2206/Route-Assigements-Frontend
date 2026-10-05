@@ -134,7 +134,11 @@
             أحمد حسن
           </div>
         </div>
-        <div class="nav-links flex gap-8 items-center" role="menubar">
+        <div
+          id="nav-links"
+          class="nav-links flex gap-8 items-center"
+          role="menubar"
+        >
           <a
             class="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors duration-300 text-lg"
             href="#hero-section"
@@ -2353,6 +2357,22 @@
               aria-selected="false"
               type="button"
             ></button>
+            <button
+              class="carousel-indicator w-3 h-3 rounded-full bg-slate-400 dark:bg-slate-600 transition-all duration-300 hover:scale-125 cursor-pointer"
+              data-index="4"
+              role="tab"
+              aria-label="التوصية 5"
+              aria-selected="false"
+              type="button"
+            ></button>
+            <button
+              class="carousel-indicator w-3 h-3 rounded-full bg-slate-400 dark:bg-slate-600 transition-all duration-300 hover:scale-125 cursor-pointer"
+              data-index="5"
+              role="tab"
+              aria-label="التوصية 6"
+              aria-selected="false"
+              type="button"
+            ></button>
           </div>
 
           <div
@@ -2629,7 +2649,11 @@
             <div
               class="bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700"
             >
-              <form class="space-y-6" aria-label="نموذج التواصل">
+              <form
+                class="space-y-6"
+                aria-label="نموذج التواصل"
+                novalidate
+              >
                 <div>
                   <label for="full-name" class="block text-lg font-medium mb-2"
                     >الاسم الكامل</label
@@ -2685,6 +2709,8 @@
                       aria-labelledby="project-type-label"
                       aria-haspopup="listbox"
                       aria-expanded="false"
+                      aria-required="true"
+                      aria-invalid="false"
                       tabindex="0"
                     >
                       <span
@@ -3273,6 +3299,7 @@
 
     <script src="assets/js/index.js"></script>
     <script src="assets/js/events.js"></script>
-    
+    <script src="assets/js/validation.js"></script>
+
   </body>
 </html>

@@ -17,17 +17,21 @@ const resetSettingsBtn = document.getElementById("reset-settings");
 
 let currentCarouselIndex = 0;
 
-let pageData = localStorage.getItem("pageData")
-  ? JSON.parse(localStorage.getItem("pageData"))
-  : {
-      pageFontName: "font-tajawal",
-      pageTheme: "dark",
-      pageThemeColor: {
-        primary: "#6366f1",
-        secondary: "#8b5cf6",
-        accent: "#a855f7",
-      },
-    };
+let pageData;
+
+if (localStorage.getItem("pageData")) {
+  pageData = JSON.parse(localStorage.getItem("pageData"));
+} else {
+  pageData = {
+    pageFontName: "font-tajawal",
+    pageTheme: "dark",
+    pageThemeColor: {
+      primary: "#6366f1",
+      secondary: "#8b5cf6",
+      accent: "#a855f7",
+    },
+  };
+}
 
 function memory() {
   localStorage.setItem("pageData", JSON.stringify(pageData));
@@ -36,7 +40,9 @@ function memory() {
 ///////////////////////////////////////////////
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 400) {
+  if (!scrollToTopBtn) return;
+
+  if (window.scrollY > 300) {
     scrollToTopBtn.classList.remove("invisible");
     scrollToTopBtn.classList.replace("opacity-0", "opacity-100");
   } else {
@@ -48,14 +54,14 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
   let current = "";
 
-  document.querySelectorAll("section").forEach((section) => {
+  document.querySelectorAll("section[id]").forEach((section) => {
     const sectionTop = section.offsetTop - 100;
     if (window.scrollY >= sectionTop) {
       current = section.getAttribute("id");
     }
   });
 
-  document.querySelectorAll("nav a").forEach((link) => {
+  document.querySelectorAll(".nav-links a[href^='#']").forEach((link) => {
     link.classList.remove("active");
     if (link.getAttribute("href") === `#${current}`) {
       link.classList.add("active");
@@ -66,18 +72,34 @@ window.addEventListener("scroll", () => {
 ////////////////////////////////////
 
 function carouselUpdate(index) {
-  testimonialsCarousel.style.transform = `translateX(${index * (100 / 3)}%)`;
+  if (!testimonialsCarousel || carouselIndicators.length === 0) return;
+  const visibleCount =
+    window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+  const maxIndex = Math.max(
+    0,
+    document.querySelectorAll(".testimonial-card").length - visibleCount,
+  );
+  index = Math.min(index, maxIndex);
+  testimonialsCarousel.style.transform =
+    `translateX(${index * (100 / visibleCount)}%)`;
 
-  carouselIndicators.forEach((indicator) => {
+  carouselIndicators.forEach((indicator, indicatorIndex) => {
+    indicator.classList.toggle("hidden", indicatorIndex > maxIndex);
     indicator.classList.remove("bg-accent", "active");
     indicator.classList.add("bg-slate-400", "dark:bg-slate-600");
     indicator.setAttribute("aria-selected", "false");
+    indicator.setAttribute(
+      "tabindex",
+      indicatorIndex === index ? "0" : "-1",
+    );
   });
 
   const current = carouselIndicators[index];
-  current.classList.remove("bg-slate-400", "dark:bg-slate-600");
-  current.classList.add("bg-accent", "active");
-  current.setAttribute("aria-selected", "true");
+  if (current) {
+    current.classList.remove("bg-slate-400", "dark:bg-slate-600");
+    current.classList.add("bg-accent", "active");
+    current.setAttribute("aria-selected", "true");
+  }
 }
 
 function renderPortfolioItems(value) {
@@ -122,9 +144,10 @@ function applyColorTheme(primaryColor, secondaryColor, accentColor) {
 function mainProsses() {
   toggleDarkMode.classList.replace("dark", pageData.pageTheme);
 
-  pageData.pageTheme == "dark"
-    ? themeToggleBtn.setAttribute("aria-pressed", "false")
-    : themeToggleBtn.setAttribute("aria-pressed", "true");
+  themeToggleBtn.setAttribute(
+    "aria-pressed",
+    String(pageData.pageTheme === "dark"),
+  );
 
   applyColorTheme(
     pageData.pageThemeColor.primary,
@@ -143,6 +166,13 @@ function mainProsses() {
       el.setAttribute("aria-checked", "false");
     }
   });
+
+  document.body.classList.remove(
+    "font-alexandria",
+    "font-tajawal",
+    "font-cairo",
+  );
+  document.body.classList.add(pageData.pageFontName);
 
   chooseColorBtn.forEach((el) => {
     if (el.getAttribute("data-primary") == pageData.pageThemeColor.primary) {
@@ -167,4 +197,5 @@ function mainProsses() {
 
 (function () {
   mainProsses();
+  carouselUpdate(currentCarouselIndex);
 })();
