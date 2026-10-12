@@ -20,13 +20,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" crossorigin href="assets/css/style.css" />
+    <style>
+      .z-50 {
+        z-index: 50;
+      }
+    </style>
   </head>
   <body
     class="bg-linear-to-br from-space-dark via-slate-900 to-space-blue font-inter text-white"
   >
     <aside
       id="sidebar"
-      class="fixed top-0 left-0 h-full w-64 bg-slate-900 border-r border-slate-800 flex flex-col transition-transform duration-300 sidebar-mobile"
+      class="fixed top-0 left-0 h-full w-64 bg-slate-900 border-r border-slate-800 flex flex-col transition-transform duration-300 z-50 sidebar-mobile"
     >
       <div class="p-4 border-b border-slate-800">
         <div class="flex items-center space-x-3">
