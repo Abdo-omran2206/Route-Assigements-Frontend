@@ -15,13 +15,23 @@ const placeHolderData = {
 const tabList = Array.from(document.querySelectorAll("nav a"));
 const sections = Array.from(document.querySelectorAll("section"));
 const apodLoading = document.getElementById("apod-loading");
+const sidebarToggle = document.getElementById("sidebar-toggle");
+const sidebar = document.getElementById("sidebar");
+
+sidebarToggle.addEventListener("click", () => {
+  sidebar.classList.toggle("sidebar-mobile");
+});
 
 let activeTab = tabList[0].getAttribute("data-section");
 
 tabList.forEach((tab) => {
   tab.addEventListener("click", ({ currentTarget }) => {
     const targetId = currentTarget.getAttribute("data-section");
-
+    if (sidebarToggle.classList.contains("hidden")) {
+      sidebar.classList.add("sidebar-mobile");
+    } else {
+      sidebar.classList.toggle("sidebar-mobile");
+    }
     sections.forEach((section) => {
       section.classList.add("hidden");
     });
